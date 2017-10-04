@@ -4,6 +4,9 @@ var bodyParser = require('body-parser');
 require ('dotenv').config();
 
 var app = express();
+
+app.use(express.static('public'));
+
 var port = process.env.PORT;
 
 app.get('/giphy', function(req, res){

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vendors/angular.js"></script>
+    <script src="client.js"></script>
+    <title>API practicesss</title>
+</head>
+
+<body ng-app="myApp">
+    <h1>our page, my precious</h1>
+    <div ng-controller="PageController as PC">
+<div><img ng-src="https://media1.giphy.com/media/DSO9yOE35Lj9e/giphy.gif"/></div>
+        <div ng-repeat="gif in PC.gifs.list">
+            <div><img ng-src="{{gif.images.original.url}}"/></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
